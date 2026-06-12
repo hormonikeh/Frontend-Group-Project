@@ -1,3 +1,5 @@
+const API_BASE_URL = 'https://travelpal-backend-de3k.onrender.com/api';
+
 
 const forgotPasswordForm = document.getElementById('forgotPasswordForm');
 const emailInput = document.getElementById('emailInput');
@@ -7,7 +9,7 @@ const backBtn = document.getElementById('backBtn');
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-forgotPasswordForm.addEventListener('submit', function(e) {
+forgotPasswordForm.addEventListener('submit', async function(e) {
     e.preventDefault();
     
     errorMessage.classList.add('hidden');
@@ -24,13 +26,28 @@ forgotPasswordForm.addEventListener('submit', function(e) {
         showError('Please enter a valid email address');
         return;
     }
-    
-    showSuccess(`Reset link sent to ${email}`);
-    
-    forgotPasswordForm.reset();
-    
-    console.log('Password reset requested for:', email);
+
+    try {
+        const response = await fetch(`${API_BASE_URL}/user/forgot-password`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email: email })
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            showSuccess(data.message || `Reset link sent to ${email}`);
+            forgotPasswordForm.reset();
+        } else {
+            showError(data.message || 'Failed to send reset link.');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        showError('Network error. Could not reach the server.');
+    }
 });
+
 
 function showError(message) {
     errorMessage.textContent = message;
