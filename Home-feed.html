@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRAVELPAL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&family=Young+Serif&display=swap"
+      rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/javs/capstoneproject.js"></script>
+  </head>
+  <body class="m-0 p-0 font-inter bg-white">
+    <div class="mt-[70px]">
+      <div
+        class="fixed top-0 left-0 w-full z-10 flex items-center justify-between border-b border-[#E6E7E8] bg-white p-[5px]">
+        <div class="ml-10">
+          <img
+            class="iw-[60%] max-[680px]:w-[80%]"
+            src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780300211/Frame_103_ee3e6u.png"
+            alt="" />
+        </div>
+        <div class="click">
+          <ul
+            class="flex gap-[50px] capitalize list-none p-0 max-[680px]:flex-col max-[680px]:gap-[10px] max-[680px]:mr-5">
+            <li>
+              <a class="text-[16px] text-[#1A365D] no-underline" href=""
+                >home</a
+              >
+            </li>
+            <li>
+              <a class="text-[16px] text-[#1A365D] no-underline" href=""
+                >discovery</a
+              >
+            </li>
+            <li>
+              <a class="text-[16px] text-[#1A365D] no-underline" href=""
+                >My Groups</a
+              >
+            </li>
+            <li>
+              <a class="text-[16px] text-[#1A365D] no-underline" href=""
+                >Message</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mr-10 mb-[10px] flex items-center gap-5">
+          <button
+            class="bg-[#1A365D] text-white rounded-[15px] px-[10px] py-[10px] capitalize text-[14px] cursor-pointer border-0">
+            get started
+          </button>
+          <button
+            class="bg-white text-[#1A365D] rounded-[15px] px-[10px] py-[10px] capitalize text-[14px] border border-[#1A365D] cursor-pointer">
+            sign in
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-[5px] mx-10 mb-5">
+        <div
+          class="relative h-[600px] w-full rounded-lg bg-cover bg-center bg-no-repeat p-[15px]"
+          style="
+            background-image: url(&quot;https://res.cloudinary.com/dnv8g1dan/image/upload/v1780347978/unsplash_-27u_GzlAFw_ycbash.png&quot;);
+          ">
+          <div
+            class="flex h-[650px] flex-col justify-center gap-5 text-center w-[]">
+            <p class="text-[60px] font-bold text-white capitalize">
+              find your next travel community
+            </p>
+            <p class="text-[24px] text-white w-[%] text-center ml-">
+              Join travel groups, meet trusted travellers, discover
+              destinations, and plan unforgettable experiences together.
+            </p>
+
+            <div class="flex justify-center gap-[25px] mt-10">
+              <button
+                class="bg-[#1A365D] text-[#E1E5EB] px-5 py-2.5 rounded-[10px] capitalize text-[16px] border-0 cursor-pointer">
+                explore groups
+              </button>
+              <button
+                class="bg-[#E14F1E] text-[#E6E7E8] px-5 py-2.5 rounded-[10px] capitalize text-[16px] border-0 cursor-pointer">
+                create travel groups
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="absolute bottom-[-40px] left-[20%] flex w-[50%] items-center justify-between rounded-[20px] border-[5px] border-[#1A365D] bg-white px-5 py-[30px]">
+            <div class="flex w-full items-center gap-[5px]">
+              <img
+                class="search-icon"
+                src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780301260/wordpress_search_idjw95.png"
+                alt="" />
+              <input
+                class="w-full border-none bg-transparent outline-none placeholder:text-[12px] placeholder:text-[#8191A9]"
+                type="text"
+                name="search"
+                placeholder="Search destination, interest, or communities" />
+            </div>
+
+            <img
+              class="icon"
+              src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780301260/circum_filter_tx1ugo.png"
+              alt="" />
+          </div>
+        </div>
+
+        <div class="mt-[90px]">
+          <div class="mb-[18px] flex justify-between">
+            <div>
+              <p class="text-[36px] font-bold text-[#1A365D]">
+                Trending destination
+              </p>
+              <p class="text-[20px] text-[#8191A9]">
+                Discover the most active communities around the world.
+              </p>
+            </div>
+            <a class="text-[16px] text-[#993311]" href="">See all</a>
+          </div>
+
+          <div class="grid grid-cols-2 gap-5 max-[680px]:grid-cols-1">
+            <div
+              class="relative h-[600px] rounded-[30px] bg-cover bg-center"
+              style="
+                background-image: url(&quot;https://res.cloudinary.com/dnv8g1dan/image/upload/v1780437408/unsplash_WdQuEEJe-O0_xqjxu1.png&quot;);
+              ">
+              <img
+                class="absolute left-1/1 right-0 pr-[15px] pt-[15px]"
+                src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780437405/Frame_17_k9mequ.png"
+                alt="" />
+              <div
+                class="absolute bottom-0 left-0 right-0 flex items-center justify-between p-[15px] text-white">
+                <div class="w-1/2">
+                  <p class="text-[24px] font-semibold text-[#E6E7E8]">
+                    Bali, Indonesia
+                  </p>
+                  <p class="text-[14px] text-[#E1E5EB]">
+                    Join hikers, food lovers, and digital nomands discovering.
+                  </p>
+                </div>
+                <div class="flex gap-[15px] text-[16px] text-[#E1E5EB]">
+                  <div class="flex items-center gap-[2px]">
+                    <img
+                      src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780944023/Vector_16_aj9kdd.png"
+                      alt="" />
+                    <p class="value">1.2K</p>
+                  </div>
+                  <div class="flex items-center">
+                    <img
+                      src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780437405/material-symbols-light_star-outline-rounded_zvnuro.png"
+                      alt="" />
+                    <p>4.9</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="relative h-[600px] rounded-[30px] bg-cover bg-center"
+              style="
+                background-image: url(&quot;https://res.cloudinary.com/dnv8g1dan/image/upload/v1780437408/unsplash_qtbV_8P_Ksk_xnveid.png&quot;);
+              ">
+              <img
+                class="absolute left-1/1 right-0 pr-[15px] pt-[15px]"
+                src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780437405/Frame_17_k9mequ.png"
+                alt="" />
+              <div
+                class="absolute bottom-0 left-0 right-0 flex items-center justify-between p-[15px] text-white">
+                <div class="w-1/2">
+                  <p class="text-[24px] font-semibold text-[#E6E7E8]">
+                    Dubai, UAE
+                  </p>
+                  <p class="text-[14px] text-[#E1E5EB]">
+                    Luxury experiences, desert tours, and city nightlife
+                    discussions.
+                  </p>
+                </div>
+                <div class="flex gap-[15px] text-[16px] text-[#E1E5EB]">
+                  <div class="flex items-center gap-[2px]">
+                    <img
+                      src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780944023/Vector_16_aj9kdd.png"
+                      alt="" />
+                    <p class="value">3.8K</p>
+                  </div>
+                  <div class="flex items-center">
+                    <img
+                      src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780437405/material-symbols-light_star-outline-rounded_zvnuro.png"
+                      alt="" />
+                    <p>4.9</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="relative h-[600px] rounded-[30px] bg-cover bg-center"
+              style="
+                background-image: url(&quot;https://res.cloudinary.com/dnv8g1dan/image/upload/v1780437408/unsplash_CRGscXkpd18_al2oar.png&quot;);
+              ">
+              <img
+                class="absolute left-1/1 right-0 pr-[15px] pt-[15px]"
+                src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780437405/Frame_17_k9mequ.png"
+                alt="" />
+              <div
+                class="absolute bottom-0 left-0 right-0 flex items-center justify-between p-[15px] text-white">
+                <div class="w-1/2">
+                  <p class="text-[24px] font-semibold text-[#E6E7E8]">
+                    Cape Town, South Africa
+                  </p>
+                  <p class="text-[14px] text-[#E1E5EB]">
+                    Beaches, cafes, and adventure spots.
+                  </p>
+                </div>
+                <div class="flex gap-[15px] text-[16px] text-[#E1E5EB]">
+                  <div class="flex items-center gap-[2px]">
+                    <img
+                      src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780944023/Vector_16_aj9kdd.png"
+                      alt="" />
+                    <p class="value">4.2K</p>
+                  </div>
+                  <div class="flex items-center">
+                    <img
+                      src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780437405/material-symbols-light_star-outline-rounded_zvnuro.png"
+                      alt="" />
+                    <p>4.9</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="relative h-[600px] rounded-[30px] bg-cover bg-center"
+              style="
+                background-image: url(&quot;https://res.cloudinary.com/dnv8g1dan/image/upload/v1780437408/unsplash_rknrvCrfS1k_bjzdgk.png&quot;);
+              ">
+              <img
+                class="absolute left-1/1 right-0 pr-[15px] pt-[15px]"
+                src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780437405/Frame_17_k9mequ.png"
+                alt="" />
+              <div
+                class="absolute bottom-0 left-0 right-0 flex items-center justify-between p-[15px] text-white">
+                <div class="w-1/2">
+                  <p class="text-[24px] font-semibold text-[#E6E7E8]">
+                    Paris, France
+                  </p>
+                  <p class="text-[14px] text-[#E1E5EB]">
+                    Explore culture, fashion, food, and unforgettable city
+                    experiences.
+                  </p>
+                </div>
+                <div class="flex gap-[15px] text-[16px] text-[#E1E5EB]">
+                  <div class="flex items-center gap-[2px]">
+                    <img
+                      src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780944023/Vector_16_aj9kdd.png"
+                      alt="" />
+                    <p class="value">2.2K</p>
+                  </div>
+                  <div class="flex items-center">
+                    <img
+                      src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780437405/material-symbols-light_star-outline-rounded_zvnuro.png"
+                      alt="" />
+                    <p>4.9</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-[35px]">
+          <div class="flex items-center justify-between">
+            <div class="groups">
+              <p class="text-[36px] font-bold text-[#1A365D]">
+                Recommended Groups
+              </p>
+              <p class="text-[20px] text-[#8191A9]">
+                Communities tailored to your travel interests and destinations
+              </p>
+            </div>
+            <div><a class="text-[16px] text-[#993311]" href="">See all</a></div>
+          </div>
+
+          <div class="joincontainer">
+            <div class="mt-[30px] rounded-[30px] bg-[#F5F5F5] p-[30px]">
+              <div class="mb-[10px] flex items-center justify-between">
+                <div class="groups">
+                  <p class="text-[32px] font-semibold text-[#1A365D]">
+                    Backpackers Africa
+                  </p>
+                  <p class="text-[20px] text-[#8191A9]">
+                    Budget-friendly adventures, hostels tips, and group travel
+                    across Africa
+                  </p>
+                </div>
+                <div>
+                  <button
+                    class="flex items-center gap-[5px] rounded-lg bg-[#1A365D] p-[10px] text-white cursor-pointer">
+                    Join
+                    <img
+                      src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780300202/mdi_users-add_qz0ba1.png"
+                      alt="" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="relative">
+                <img
+                  class="w-full rounded-[15px]"
+                  src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780525725/unsplash_M9wFsA0mLOw_1_bbjvcf.png"
+                  alt="" />
+                <div
+                  class="absolute left-[30px] top-[30px] flex items-center gap-[10px]">
+                  <div
+                    class="flex items-center gap-[5px] text-[24px] text-[#00AEEF] font-medium">
+                    <img
+                      src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780525719/Vector_7_qtkmv3.png"
+                      alt="" />
+                    <p>verified</p>
+                  </div>
+                  <div
+                    class="flex items-center gap-[5px] text-[24px] text-white font-medium">
+                    <img
+                      src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780525718/Vector_8_cs0xc6.png"
+                      alt="" />
+                    <p>Public</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-[10px] flex items-center gap-[10px]">
+                <div class="flex items-center gap-[5px] text-[#8191A9]">
+                  <img
+                    src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780525716/Vector_9_msnr3v.png"
+                    alt="" />
+                  <p class="number-value">4/5</p>
+                </div>
+                <div class="flex items-center gap-[5px] text-[#8191A9]">
+                  <img
+                    src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780525713/fontisto_date_qoosws.png"
+                    alt="" />
+                  <p class="number-value">July 1st - July 7th</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-[30px] rounded-[30px] bg-[#F5F5F5] p-[30px]">
+              <div class="mb-[10px] flex items-center justify-between">
+                <div class="groups">
+                  <p class="text-[32px] font-semibold text-[#1A365D]">
+                    Digital Nomads Hub
+                  </p>
+                  <p class="text-[20px] text-[#8191A9]">
+                    Connect with remote workers and travellers building freedom
+                    aroud the world.
+                  </p>
+                </div>
+                <div>
+                  <button
+                    class="flex items-center gap-[5px] rounded-lg bg-[#1A365D] p-[10px] text-white cursor-pointer">
+                    Request
+                    <img
+                      src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780300202/mdi_users-add_qz0ba1.png"
+                      alt="" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="relative">
+                <img
+                  class="w-full rounded-[15px]"
+                  src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686956/unsplash_iUBgeNeyVy8_bq7cec.png"
+                  alt="" />
+                <div
+                  class="absolute left-[30px] top-[30px] flex items-center gap-[10px]">
+                  <div
+                    class="flex items-center gap-[5px] text-[24px] text-[#00AEEF] font-medium">
+                    <img
+                      src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780525719/Vector_7_qtkmv3.png"
+                      alt="" />
+                    <p>verified</p>
+                  </div>
+                  <div
+                    class="flex items-center gap-[5px] text-[24px] text-white font-medium">
+                    <img
+                      src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780525718/Vector_8_cs0xc6.png"
+                      alt="" />
+                    <p>Public</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-[10px] flex items-center gap-[10px]">
+                <div class="flex items-center gap-[5px] text-[#8191A9]">
+                  <img
+                    src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780525716/Vector_9_msnr3v.png"
+                    alt="" />
+                  <p class="number-value">3/5</p>
+                </div>
+                <div class="flex items-center gap-[5px] text-[#8191A9]">
+                  <img
+                    src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780525713/fontisto_date_qoosws.png"
+                    alt="" />
+                  <p class="number-value">July 21st - July 30th</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mt-[30px] bg-[#E1E5EB] px-[30px] py-5">
+          <div class="mb-[30px] text-center">
+            <p class="text-[26px] text-[#666666]">
+              What our customers says about us
+            </p>
+            <p class="text-[36px] font-bold text-[#1A365D]">Testimonials</p>
+          </div>
+
+          <img
+            class="absolute left-[5%] top-1/2 -translate-y-1/2 cursor-pointer w-[1%]"
+            src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686952/Vector_12_xkpldb.png"
+            alt="" />
+          <img
+            class="absolute left-[95%] top-1/2 -translate-y-1/2 cursor-pointer w-[1%]"
+            src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686949/Vector_13_gqbxea.png"
+            alt="" />
+
+          <div
+            class="flex items-center justify-center gap-5 max-[680px]:flex-col">
+            <div
+              class="w-[24%] bg-white px-5 py-[15px] shadow-[0_4px_4.3px_rgba(0,0,0,0.4)] max-[680px]:w-[50%]">
+              <div class="text-center">
+                <img
+                  class="w-[20%] rounded-full mx-auto"
+                  src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686947/unsplash_pFstlKzYPNY_guwqft.png"
+                  alt="" />
+                <div class="message">
+                  <p class="text-[26px] font-semibold capitalize">Daniel k.</p>
+                  <p class="my-[10px] text-[16px] leading-6">
+                    I love how fast the public groups works. I tapped joined and
+                    was already chatting with members within seconds. The
+                    experience feels smooth and modern.
+                  </p>
+                </div>
+                <div
+                  class="mt-2 mb-[px] flex items-center justify-center gap-[5px]">
+                  <img
+                    class="w-[6%]"
+                    src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686941/Vector_15_kynihw.png"
+                    alt="" />
+                  <img
+                    class="w-[6%]"
+                    src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686941/Vector_15_kynihw.png"
+                    alt="" />
+                  <img
+                    class="w-[6%]"
+                    src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686941/Vector_15_kynihw.png"
+                    alt="" />
+                  <img
+                    class="w-[6%]"
+                    src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686941/Vector_15_kynihw.png"
+                    alt="" />
+                  <img
+                    class="w-[6%]"
+                    src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686941/Vector_15_kynihw.png"
+                    alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="w-[24%] bg-white px-5 py-[15px] shadow-[0_4px_4.3px_rgba(0,0,0,0.4)] max-[680px]:w-[50%]">
+              <div class="text-center">
+                <img
+                  class="w-[20%] rounded-full mx-auto"
+                  src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686939/unsplash_fqHHDDnYodA_utfgbh.png"
+                  alt="" />
+                <div class="message">
+                  <p class="text-[26px] font-semibold capitalize">Daniel k.</p>
+                  <p class="my-[10px] text-[16px] leading-6">
+                    Joining travel groups through TravelPal, made planning my
+                    trips so much easier. I found people with the same interests
+                    instantly and the group chats felt very active and genuine.
+                  </p>
+                </div>
+                <div
+                  class="mt-2 mb-[px] flex items-center justify-center gap-[5px]">
+                  <img
+                    class="w-[6%]"
+                    src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686941/Vector_15_kynihw.png"
+                    alt="" />
+                  <img
+                    class="w-[6%]"
+                    src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686941/Vector_15_kynihw.png"
+                    alt="" />
+                  <img
+                    class="w-[6%]"
+                    src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686941/Vector_15_kynihw.png"
+                    alt="" />
+                  <img
+                    class="w-[6%]"
+                    src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686941/Vector_15_kynihw.png"
+                    alt="" />
+                  <img
+                    class="w-[6%]"
+                    src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686941/Vector_15_kynihw.png"
+                    alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="w-[24%] bg-white px-5 py-[15px] shadow-[0_4px_4.3px_rgba(0,0,0,0.4)] max-[680px]:w-[50%]">
+              <div class="text-center">
+                <img
+                  class="w-[20%] rounded-full mx-auto"
+                  src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686935/unsplash_fqHHDDnYodA_1_qzykkv.png"
+                  alt="" />
+                <div class="message">
+                  <p class="text-[26px] font-semibold capitalize">Daniel k.</p>
+                  <p class="testimonials-message">
+                    The interface is clean and very easy to navigate. Searching
+                    by destinaton and interests saved me so much time compared
+                    to other community site
+                  </p>
+                </div>
+                <div
+                  class="mt-2 mb-[px] flex items-center justify-center gap-[5px]">
+                  <img
+                    class="w-[6%]"
+                    src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686941/Vector_15_kynihw.png"
+                    alt="" />
+                  <img
+                    class="w-[6%]"
+                    src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686941/Vector_15_kynihw.png"
+                    alt="" />
+                  <img
+                    class="w-[6%]"
+                    src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686941/Vector_15_kynihw.png"
+                    alt="" />
+                  <img
+                    class="w-[6%]"
+                    src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686941/Vector_15_kynihw.png"
+                    alt="" />
+                  <img
+                    class="w-[6%]"
+                    src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686941/Vector_15_kynihw.png"
+                    alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="mt-10 mb-[30px] flex items-center justify-center gap-[5px]">
+            <img
+              class="w-[1%]"
+              src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686932/Ellipse_1_qzgn5y.png"
+              alt="" />
+            <img
+              class="w-[1%]"
+              src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686930/Ellipse_2_mlwjzv.png"
+              alt="" />
+            <img
+              class="w-[1%]"
+              src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686932/Ellipse_1_qzgn5y.png"
+              alt="" />
+            <img
+              class="w-[1%]"
+              src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686932/Ellipse_1_qzgn5y.png"
+              alt="" />
+            <img
+              class="w-[1%]"
+              src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780686932/Ellipse_1_qzgn5y.png"
+              alt="" />
+          </div>
+        </div>
+      </div>
+
+      <footer class="bg-[#1A365D] px-16 py-10">
+        <div class="mb-[50px] flex justify-between max-[680px]:flex-col">
+          <div class="flex flex-col gap-10">
+            <img
+              class="w-2/5"
+              src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780300198/Frame_103_1_auuia7.png"
+              alt="" />
+            <div class="flex flex-col gap-[30px]">
+              <div class="w-[80%]">
+                <p class="text-[#CCF1FF] leading-6">About</p>
+                <p class="text-[15px] leading-6 text-[#00AEEF]">
+                  A platform that help discover new places with people who share
+                  your passion for travel.
+                </p>
+              </div>
+
+              <div class="social">
+                <div class="flex items-center gap-[10px]">
+                  <a href=""
+                    ><img
+                      class="w-3/5"
+                      src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780300199/Vector_1_wvay9i.png"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      class="w-3/5"
+                      src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780300198/Vector_2_u4dsrm.png"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      class="w-3/5"
+                      src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780300198/Vector_3_onueij.png"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      class="w-3/5"
+                      src="https://res.cloudinary.com/dnv8g1dan/image/upload/v1780300198/Vector_4_pygrbc.png"
+                      alt=""
+                  /></a>
+                </div>
+
+                <p class="text-[#CCF1FF] leading-6">Follow us</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-3">
+            <div><p class="text-[20px] text-[#CCF1FF]">Quick links</p></div>
+
+            <ul class="flex flex-col gap-[10px] p-0 list-none">
+              <a
+                class="no-underline text-[15px] font-normal text-[#00aeef] m-0"
+                href=""
+                href=""
+                ><li>Home</li></a
+              >
+              <a
+                class="no-underline text-[15px] font-normal text-[#00aeef] m-0"
+                href=""
+                href=""
+                ><li>Discover</li></a
+              >
+              <a
+                class="no-underline text-[15px] font-normal text-[#00aeef] m-0"
+                href=""
+                href=""
+                ><li>Communities</li></a
+              >
+              <a
+                class="no-underline text-[15px] font-normal text-[#00aeef] m-0"
+                href=""
+                href=""
+                ><li>FAQ</li></a
+              >
+              <a
+                class="no-underline text-[15px] font-normal text-[#00aeef] m-0"
+                href=""
+                href=""
+                ><li>Support</li></a
+              >
+            </ul>
+          </div>
+          <div class="flex flex-col gap-10">
+            <div class="flex flex-col gap-[15px]">
+              <p class="text-[20px] text-[#CCF1FF]">Contacts</p>
+              <div class="call">
+                <p class="text-[15px] text-[#00AEEF]">Call</p>
+                <p class="text-[12px] text-[#00AEEF]">+0123 456 789</p>
+              </div>
+              <div class="emmail">
+                <p class="text-[15px] text-[#00AEEF]">Email</p>
+                <p class="text-[12px] text-[#00AEEF]">TravelPal@info.com</p>
+              </div>
+            </div>
+
+            <div class="flex w-[70%] flex-col gap-[5px]">
+              <p class="text-[14px] text-[#00AEEF]">
+                Subscribe to our newsletter for exclusive offer and updates
+              </p>
+              <input
+                class="rounded-[3px] border border-[#A6B2C3] bg-[#8191A9] p-[10px] placeholder:text-[12px] placeholder:text-[#A6B2C3]"
+                type="text"
+                name="email"
+                placeholder="email address" />
+              <button
+                class="bg-[#00AEEF] p-[10px] border-0 rounded-[3px] cursor-pointer">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between">
+          <p class="text-[14px] text-[#E6E7E8]">
+            © 2026 TravelPal. All rights reserved
+          </p>
+          <div class="mr-[165px] flex items-center gap-[15px]">
+            <p class="text-[14px] text-[#E6E7E8]">Privacy Policy</p>
+            <p class="text-[14px] text-[#E6E7E8]">Terms of service</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
