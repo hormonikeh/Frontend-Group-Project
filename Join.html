@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelPal JoinRequest Group</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200...800&display=swap">
+    <style>
+        body{
+            font-family: "Inter", sans-serif;
+        }
+    </style> 
+</head>
+<body>
+<!-- first container here  -->
+<div>
+   <div class="flex text-center items-center gap-48 md:gap-72 text-black">
+       <button class="p-4 rounded-full">
+           <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780700029/Vector_2_mriusq.png" alt="" class="hover:scale-110 transition">
+       </button>
+       <h3 class="text-lg font-semibold"> Join Request</h3>
+     </div>
+</div>
+
+  <!-- Scrollable Main Content -->
+    <div class="m-4 rounded-xl border border-gray-300 bg-gray-50">
+        <div class="p-4 flex">
+            <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780790760/Rectangle_1327_rnapip.png" alt="" class="p-1 w-24 h-24 md:w-136 md:h-48 rounded-2xl object-cover">
+          <div class="mt-4 ml-4 md:ml-6">
+            <h3 class="font-semibold text-[16px] md:text-[36px]">Wander Africa Explorer</h3>
+            <div class="flex items-center gap-2 mt-2">
+                <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780823772/Vector_10_v53ivg.png" alt="" class="w-4 h-3">
+                <h3 class="text-[12px] md:text-[20px] text-gray-800">Private Group * 2.4k Members</h3>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!-- 3. Progress Tracking Block (0%) -->
+    <div class="p-4 space-y-2">
+      <div class="flex justify-between items-center text-[11px] font-extrabold tracking-wide uppercase">
+        <span class="text-gray-400">Question 0 of 3</span>
+        <span class="text-gray-400">0% Complete</span>
+      </div>
+      <div class="w-full h-1.5 bg-gray-100 rounded-full">
+        <div class="h-full bg-sky-500 w-0 rounded-full transition-all duration-300"></div>
+      </div>
+    </div>
+    <!-- 4. Textarea Question Field -->
+    <div class="p-4 space-y-2">
+      <label class="text-[12px] text-gray-900 tracking-wide block">Why do you want to join this travel group?</label>
+      <p class="text-[11px] text-gray-500 leading-normal">The host uses this to ensure all members share similar travel goals and values.</p>
+      <textarea 
+        rows="4" 
+        class="w-full p-3.5 text-[12px] text-gray-800 bg-white border border-gray-200 rounded-2xl placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-500/20 focus:border-sky-500 resize-none leading-relaxed transition-all"
+        placeholder="Describe your motivations..."></textarea>
+    </div>
+    
+    <!-- 5. Multiple Choice Row Matrix -->
+    <div class="p-4 space-y-2 -mt-4">
+      <span class="text-[12px] text-gray-900 tracking-wide block">What is your travel experience level?</span>
+      <div class="grid grid-cols-1 gap-2">
+        <!-- Novice (Unselected State) -->
+        <label class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm cursor-pointer hover:border-gray-300 transition-colors">
+            <input type="radio" name="travel_exp" value="novice" class="sr-only">
+            <!-- Novice Hiking Icon -->
+            <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780831855/Vector_13_ftj29n.png" alt="Novice">
+            <span class="text-xs font-bold text-gray-900">Novice</span>
+            <span class="text-[10px] text-gray-500 mt-0.5">1-2 trips / year</span>
+          </label>
+          <!-- Intermediate (Unselected State) -->
+          <label class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm cursor-pointer hover:border-gray-300 transition-colors">
+            <input type="radio" name="travel_exp" value="intermediate" class="sr-only">
+            <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780853326/Vector_15_ysy4hn.png" alt="Intermediate">
+            <span class="mt-1 text-xs font-bold text-gray-900">Intermediate</span>
+            <span class="text-[10px] text-gray-500 mt-0.5">Frequent Traveler</span>
+          </label>
+            <!-- Expert (Unselected State) -->
+            <div class="flex flex-col items-center justify-center py-3.5 bg-white border border-gray-200 rounded-2xl cursor-pointer hover:bg-gray-50/50 transition-colors">
+                <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780853341/Vector_16_yuxhmn.png" alt="">
+                <span class="text-[14px] text-gray-900 mt-2">Expert</span>
+                <span class="text-[12px] text-gray-900 font-medium mt-0.5">Nomadic Lifestyle</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 6. Safety Verification Block (Empty/Unchecked) -->
+          <div class="m-4 space-y-2">
+            <span class="text-[12px] text-gray-900 tracking-wide  block">Have you read our safety guidelines?</span>
+            <div class="flex items-start gap-3 bg-[#d3e4d3] rounded-2xl p-3.5 rounded-2xl">
+              <div class="pt-0.5">
+                <div class="w-4 h-4 bg-white border border-black rounded-md"></div>
+              </div>
+              <div class="space-y-0.5">
+                <span class="text-[14px] font-bold text-[#488843] block">I agree to the Community Safety Charter</span>
+                <p class="mt-2 text-[10px] text-black w-60 md:w-auto leading-normal">Our group prioritizes verified identities and real-time location sharing during meetups.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Security Protection Information Badge -->
+          <div class="m-4 flex items-start gap-3 bg-[#d2d7df] border border-gray-100 p-3.5 rounded-2xl">
+            <div class="text-white rounded-full p-0.5 shrink-0 mt-0.5">
+             <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780833959/Vector_17_kdizsd.png" alt="">
+            </div>
+            <div class="space-y-0.5">
+              <h3 class="text-[12px] font-bold text-gray-900">Verification Shield Active</h3>
+              <p class="text-[11px] w-60 md:w-auto text-gray-900 leading-normal font-medium">Your application will undergo a standard security screening by our automated trust system and a manual review by the host. We prioritize the safety of our traveling community.</p>
+            </div>
+          </div>
+
+          <!-- 8. Form Actions -->
+          <div class="m-4 pt-2 text-center space-y-2">
+            <button type="button" class="w-full bg-[#20355a] hover:bg-slate-800 text-white text-[12px] font-bold py-3.5 px-4 rounded-full flex items-center justify-center gap-1 shadow transition-all transform active:scale-[0.99]">
+              <span>Submit request</span>
+             <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780833976/Vector_18_xf4j4x.png" alt="" class="ml-4">
+            </button>
+            <p class="mt-4 text-[10px] text-gray-400 font-semibold tracking-wide">Typical response time: 24-48 hours</p>
+          </div>
+          <!-- footer  -->
+          <div class="mt-6 flex items-center justify-center gap-2 md:gap-8 bg-white border-t border-gray-100 py-3">
+            <div class="flex flex-col">
+              <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780653735/Group_1_gey5rr.png" alt="group1" class="w-4 h-4 ml-5 mt-4">
+              <a href="#" class="text-sm text-gray-500 ml-5 hover:text-black">Home</a>
+            </div>
+    
+            <div class="flex flex-col">
+              <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780653761/Vector_1_tmwpqb.png" alt="group2" class="w-4 h-4 ml-5 mt-4">
+              <a href="#" class="text-sm text-gray-500 ml-5 hover:text-black">Discover</a>
+            </div>
+    
+            <div class="flex flex-col">
+              <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780653748/Group_3_gav5dk.png" alt="group3" class="w-4 h-4 ml-5 mt-4">
+              <a href="#" class="text-sm text-gray-500 ml-5 hover:text-black">My Groups</a>
+            </div>
+    
+              <div class="flex flex-col">
+                <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780653740/Group_2_t4jd6r.png"
+               alt="profile" class="w-4 h-4 ml-5 mt-4">
+                <a href="#" class="text-sm text-gray-500 ml-5 hover:text-black">Profile</a>
+          </div>
+  </body>
+  </html>
+    

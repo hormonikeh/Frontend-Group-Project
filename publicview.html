@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelPal Public View</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200...800&display=swap">
+    <style>
+        body{
+            font-family: "Inter", sans-serif;
+        }
+    </style> 
+</head>
+<body >
+    <!-- first container here  -->
+     <div class="mt-8">
+        <div class="flex text-center items-center gap-48 md:gap-72 text-black">
+            <button class="p-4 rounded-full">
+                <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780700029/Vector_2_mriusq.png" alt="" class="hover:scale-110 transition">
+            </button>
+            <h3 class="text-lg font-semibold">Public Group</h3>
+          </div>
+     </div>
+     <!-- Device container  -->
+      <div class="flex flex-col p-2 m-4 border border-gray-300 rounded-xl">
+        <div class="p-4 flex gap-5 md:gap-24 items-center">
+            <div class=" flex bg-[#b9eda0] items-center rounded-full w-fit text-[8px] py-1.5 px-3 p-1 text-black">
+                <span><img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780701176/Frame_845_duyeym.png" alt="" 
+                   class="w-3 h-3"></span>Verified Group</div>
+
+                   <div class=" flex bg-[#94d4f3] items-center rounded-full w-fit text-[8px] py-1.5 px-3 p-1 text-black">
+                    <span><img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780701916/octicon_people-24_z8voou.png" alt="octicon people" 
+                       class="w-3 h-3"></span>1,180 Members</div>
+              </div>
+              <h2 class="p-4 font-semibold">Bali Digital Nomad</h2>
+                <p class="text-[14px] md:text-[16px] ml-4 text-gray-600">Connect with remote professionals and travelers living, working, and exploring Bali. Whether you’re searching for networking opportunities, travel companions, local recommendations,
+                    or a supportive community, this group brings together people building a lifestyle of freedom and adventure around the world.</p>
+                    <div class="md:flex flex-col md:flex-col items-center justify-center gap-2 mt-6">
+                        <div class="bg-[#20355a] text-white text-[14px] text-center font-semibold py-2 px-4 rounded-full w-auto md:w-[350px] m-2 hover:bg-blue-300 transition">
+                            <button class="ml-24 flex gap-2 items-center text-white hover:text-blue-200" id="toggle-equipment-btn">
+                                <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780703461/ic_baseline-join-full_om6wxf.png" alt="octicon">Join Now</button> 
+                           </div>
+                           <div class="bg-[#d3f0fd] text-black text-[14px] text-center font-semibold py-2 px-4 rounded-full w-auto md:w-[350px] m-2 hover:bg-blue-100 transition">
+                            <button class=" hover:text-blue-200" id="toggle-equipment-btn">Group Rules</button> 
+                           </div>
+                    </div>
+      </div>
+ </div>
+ 
+    <!-- Embedded Promo Image Banner -->
+    <div class="rounded-xl overflow-hidden relative text-white ">
+    <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780703979/Frame_877_1_xsv2qn.png" alt="frame" class=" p-4 w-auto h-auto md:w-full md:h-[350px] object-cover rounded-4xl"> 
+      <div class="absolute inset-0 mb-6 ml-6 flex flex-col justify-end font-bold text-[14px]">
+        Next Meetup:  Outpost Ubad, Bali <span class="text-[9px] uppercase tracking-wider ">Tomorrow, 18:00</span>
+    </div>
+    </div>
+
+    <!-- Trust Features Indicators List -->
+   <div class="p-4">
+    <div class="bg-[#e1f5fd] p-4 rounded-xl border-2 border-[#d8e9f0] space-y-2.5 shadow-sm">
+        <div class="flex items-center gap-3 text-xs md:text-xl text-gray-700">
+          <span ><img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780783184/ic_outline-health-and-safety_tt3k3x.png" alt="health and safety"></span> 
+          <span class="text-[#6ba574] font-semibold">Safety Protocols</span>
+        </div>
+        <div class="flex items-center gap-3 text-xs md:text-lg text-gray-700">
+          <span ><img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780783242/ic_outline-check-circle_ndyiic.png" alt="">
+        </span><span>Real-time sharing for group events.</span>
+        </div>
+        <div class="flex items-center gap-3 text-xs md:text-lg text-gray-700">
+          <span class="text-purple-500"><img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780783242/ic_outline-check-circle_ndyiic.png" alt="checked circle"></span>
+           <span>Mandatory ID Verification for all joins.</span>
+        </div>
+        <div class="flex items-center gap-3 text-xs md:text-lg text-gray-700">
+            <span class="text-purple-500"><img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780783242/ic_outline-check-circle_ndyiic.png" alt="checked circle"></span>
+             <span>24/7 Safety SOS Button Integration</span>
+          </div>
+      </div>
+   </div>
+
+   <!-- Trust Directory Member Grid/List -->
+   <div class="bg-[#f2fbff] border-2 border-[#d8e9f0] space-y-2 p-4 m-4 rounded-xl ">
+     <div class="flex flex-col justify-between items-center text-center p-4 ">
+        <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780784020/Vector_7_u2wwfv.png " alt="community logo"
+        class="mb-4">
+        <h3 class="text-xs ">97%</h3>
+      <span class="text-[11px] text-brand-blue font-medium">Member Satisfaction </span>
+     </div> 
+   </div>
+
+   <!-- Trust Member Profile Row -->
+   <div class="p-4 m-4 border border-gray-400 rounded-2xl">
+    <h4 class="flex justify-between ">Members Trust Directory 
+        <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780784189/akar-icons_sort_nxtnel.png" alt="filter"> 
+    </h4>
+    <div class="bg-[#edf8ff] p-4 rounded-xl mt-4">
+       
+          <div class="flex justify-between items-center ">
+            <div class="flex gap-3 items-center"> 
+            <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780784176/Ellipse_92_3_ohnolr.png" class="w-9 h-9 rounded-full object-cover">
+           <div>
+            <h4 class="flex text-center items-center gap-2 text-xs font-bold">Precious Benson 
+                <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780787114/Vector_8_jtjcso.png" 
+                alt="" class="w-3 h-3"></h4>
+            <p class="text-[10px]">Verified Lead * 23 Bali Trips</p>
+           </div>
+           </div>
+           <div class="text-[8px]">Trust <br>Score <br><img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780787125/Frame_897_b4d33g.png"
+             alt="score" class="mt-2"></div>
+          </div>
+   </div>
+   <!-- Second profile card -->
+   <div class="bg-[#edf8ff] p-4 rounded-2xl mt-4">
+       
+    <div class="flex justify-between items-center ">
+      <div class="flex gap-3 items-center"> 
+      <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780784097/Ellipse_92_pmsytv.png" class="w-9 h-9 rounded-full object-cover">
+     <div>
+      <h4 class="flex text-center items-center gap-2 text-xs font-bold">David Tristan 
+          <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780787114/Vector_8_jtjcso.png" 
+          alt="" class="w-3 h-3"></h4>
+      <p class="text-[10px]">Local Explorer* 46 Meetups</p>
+     </div>
+     </div>
+     <div class="text-[8px]">Trust <br>Score <br><img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780787151/Frame_897_1_p9q7fj.png"
+       alt="score" class="mt-2"></div>
+    </div>
+   </div>
+   <!-- Third profile card -->
+    <div class="bg-[#edf8ff] p-4 rounded-2xl mt-4">
+         
+     <div class="flex justify-between items-center ">
+        <div class="flex gap-3 items-center"> 
+        <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780784032/Ellipse_92_1_jnnh2y.png" class="w-9 h-9 rounded-full object-cover">
+      <div>
+        <h4 class="flex text-center items-center gap-2 text-xs font-bold">Amanda Flaire
+             <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780787114/Vector_8_jtjcso.png" 
+             alt="" class="w-3 h-3"></h4>
+        <p class="text-[10px]">Member * Joined May,2026</p>
+      </div>
+      </div>
+      <div class="text-[8px]">Trust <br>Score <br><img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780787142/Frame_897_2_izw4i7.png"
+         alt="score" class="mt-2"></div>
+     </div>
+    </div>
+
+       <!-- Fourth profile card -->
+        <div class="bg-[#edf8ff] p-4 rounded-2xl mt-4">
+             
+         <div class="flex justify-between items-center ">
+            <div class="flex gap-3 items-center"> 
+            <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780784041/Ellipse_92_2_hwpnco.png" class="w-9 h-9 rounded-full object-cover">
+          <div>
+            <h4 class="flex text-center items-center gap-2 text-xs font-bold">Amanda Flaire
+                 <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780787114/Vector_8_jtjcso.png" 
+                 alt="" class="w-3 h-3"></h4>
+            <p class="text-[10px]">Member * Joined May,2026</p>
+          </div>
+          </div>
+          <div class="text-[8px]">Trust <br>Score <br><img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780787135/Frame_897_3_jbgavw.png"
+             alt="score" class="mt-2"></div>
+         </div>
+        </div>
+
+        <!-- ALERT LOGO -->
+        <div class="relative">
+         <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780652989/EMERGENCY_BUTTON_zurqql.png" alt="alert"
+          class="absolute mt-4 w-8 h-8 right-8 top-[-8px] hover:scale-110 transition cursor-pointer">
+        </div>  
+
+        <!-- footer  -->
+        <div class="mt-6 flex items-center justify-center gap-2 md:gap-8 bg-white border-t border-gray-100 py-3">
+          <div class="flex flex-col">
+            <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780653735/Group_1_gey5rr.png" alt="group1" class="w-4 h-4 ml-5 mt-4">
+            <a href="#" class="text-sm text-gray-500 ml-5 hover:text-black">Home</a>
+          </div>
+  
+          <div class="flex flex-col">
+            <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780653761/Vector_1_tmwpqb.png" alt="group2" class="w-4 h-4 ml-5 mt-4">
+            <a href="#" class="text-sm text-gray-500 ml-5 hover:text-black">Discover</a>
+          </div>
+  
+          <div class="flex flex-col">
+            <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780653748/Group_3_gav5dk.png" alt="group3" class="w-4 h-4 ml-5 mt-4">
+            <a href="#" class="text-sm text-gray-500 ml-5 hover:text-black">My Groups</a>
+          </div>
+  
+            <div class="flex flex-col">
+              <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780653740/Group_2_t4jd6r.png"
+             alt="profile" class="w-4 h-4 ml-5 mt-4">
+              <a href="#" class="text-sm text-gray-500 ml-5 hover:text-black">Profile</a>
+        </div>
+     </body>
+    </html>

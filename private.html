@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelPal Private Group View</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200...800&display=swap">
+    <style>
+        body{
+            font-family: "Inter", sans-serif;
+        }
+    </style> 
+</head>
+<body>
+<!-- first container here  -->
+<div>
+   <div class="flex text-center items-center gap-48 md:gap-72 text-black">
+       <button class="p-4 rounded-full">
+           <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780700029/Vector_2_mriusq.png" alt="" class="hover:scale-110 transition">
+       </button>
+       <h3 class="text-lg font-semibold">Private Group</h3>
+     </div>
+</div>
+<!-- Device Container   -->
+<div class="p-4 m-4 rounded-4xl relative min-h-40 md:min-h-54 bg-cover bg-center "> 
+    <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780790760/Rectangle_1327_rnapip.png" alt=""
+    class="absolute inset-0 w-full h-full object-cover rounded-2xl ">
+    <div class="absolute inset-0 bg-black/80 rounded-2xl"></div>
+<div>
+    <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780790522/Vector_9_rsy1vp.png" alt="lock icon" 
+    class="absolute text-white text-xs font-bold top-4 md:top-8 left-40 md:left-36 md:right-36 lg:left-50 lg:right-48 mx-auto">
+    <h2 class="absolute text-white text-[18px] md:text-[30px] top-16 right-22  md:top-20 md:right-60 lg:top-22 lg:right-116 mx-auto">Wander Africa Explorer</h2>
+    <div class="absolute top-22 right-30 md:top-30 md:left-85 lg:top-34 lg:left-140 flex bg-[#b9eda0] items-center rounded-full w-fit text-[8px] py-1 px-3 p-1 text-black">
+        <span><img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780783184/ic_outline-health-and-safety_tt3k3x.png" alt="" 
+           class="w-3 h-3"></span>Security Verified Group</div>
+    </div>
+    </div>
+    <!-- Center Card: Requirements Checklist Info -->
+    <div class="m-4 rounded-xl border border-gray-400">
+        <div class="p-4 flex gap-3 items-center">
+            <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780823772/Vector_10_v53ivg.png" alt="lock icon" 
+            class="w-5 h-5">
+            <h3 class="text-[16px] font-semibold">Private Group</h3>
+        </div>
+        <p class="p-3 w-72 md:w-auto text-gray-600">This group requires identity verification. Content is only visible to approved members of the expedition.</p>
+        <div class="flex items-center gap-5">
+            <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780823782/Vector_11_uc5hau.png" alt="" class="w-4 h-4 ml-4">
+            <div class="flex flex-col text-gray-600 ">
+                <h3>Manual Approval</h3>
+                <p class="text-[10px]">The organizer reviews all requests</p>
+            </div>
+        </div>
+
+        <div class="mt-2 flex items-center gap-5">
+            <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780823794/Vector_12_oceore.png" alt="" class="w-4 h-4 ml-4">
+            <div class="flex flex-col text-gray-600 mb-4 md:mb-2 ">
+                <h3>Security Vetting</h3>
+                <p class="text-[10px]">Passport/ID check required for all travel companions.</p>
+            </div>
+        </div>
+      <div>
+        <div class="bg-[#20355a] text-white text-[12px] text-center font-semibold py-2.5 px-3 rounded-full w-72 md:w-auto mb-4 ml-8 md:mr-8 hover:bg-blue-600 transition">
+            <button class="text-white hover:text-blue-200" id="toggle-equipment-btn">Request to Join ></button>
+        </div>
+        <p class="-mt-4 text-center text-xs text-gray-600 mb-4">Response time: -24 hours</p>
+      </div> 
+    </div>
+
+    <!-- ALERT LOGO -->
+        <div class="relative">
+         <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780652989/EMERGENCY_BUTTON_zurqql.png" alt="alert"
+          class="absolute mt-2 w-8 h-8 right-8 top-[-8px] hover:scale-110 transition cursor-pointer">
+        </div>  
+
+        <!-- footer  -->
+        <div class="mt-6 flex items-center justify-center gap-2 md:gap-8 bg-white border-t border-gray-100 py-3">
+          <div class="flex flex-col">
+            <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780653735/Group_1_gey5rr.png" alt="group1" class="w-4 h-4 ml-5 mt-4">
+            <a href="#" class="text-sm text-gray-500 ml-5 hover:text-black">Home</a>
+          </div>
+  
+          <div class="flex flex-col">
+            <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780653761/Vector_1_tmwpqb.png" alt="group2" class="w-4 h-4 ml-5 mt-4">
+            <a href="#" class="text-sm text-gray-500 ml-5 hover:text-black">Discover</a>
+          </div>
+  
+          <div class="flex flex-col">
+            <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780653748/Group_3_gav5dk.png" alt="group3" class="w-4 h-4 ml-5 mt-4">
+            <a href="#" class="text-sm text-gray-500 ml-5 hover:text-black">My Groups</a>
+          </div>
+  
+            <div class="flex flex-col">
+              <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780653740/Group_2_t4jd6r.png"
+             alt="profile" class="w-4 h-4 ml-5 mt-4">
+              <a href="#" class="text-sm text-gray-500 ml-5 hover:text-black">Profile</a>
+        </div>
+</body>
+</html>
