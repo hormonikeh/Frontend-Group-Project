@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="pendingreq.html"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200...800&display=swap">
+    <style>
+        body{
+            font-family: "Inter", sans-serif;
+        }
+    </style> 
+<body>
+    <!-- Navigation Header -->
+    <div class="px-4 py-3 flex items-center border-b border-gray-100 bg-white">
+      <button class="text-gray-700 hover:text-black transition p-1 focus:outline-none">
+        <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+      </button>
+      <span class="flex-1 text-center font-semibold text-gray-800 text-sm mr-6">Pending request</span>
+    </div>
+    <!-- Main Scrollable Content -->
+    <div class="flex-1 overflow-y-auto px-4 py-3 pb-24">
+        <!-- Hero Header Card Image -->
+        <div class="w-full md:h-90 rounded-2xl overflow-hidden relative shadow-inner mb-4">
+          <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780790760/Rectangle_1327_rnapip.png"  alt="Wander Africa Safari" class="rounded-xl w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+          <span class="absolute top-80 left-3 bg-[#20355a] backdrop-blur-md text-white text-[11px] font-medium px-2.5 py-1 rounded-full uppercase tracking-wider">Private Group</span>
+        </div>
+        <!-- Group Titles -->
+      <h2 class="text-xl font-bold text-gray-900 tracking-tight leading-snug">Wander Africa Explorer</h2>
+      <p class="text-xs text-gray-500 mt-1.5 leading-relaxed">
+        A vibrant community for travelers exploring Africa’s biggest cities, safaris, and hidden gems.
+      </p>
+      <!-- Status Indicator Badge Area -->
+      <div class="flex justify-end my-3">
+        <span class="inline-flex items-center gap-1.5 bg-[#bbc3cc] text-[#0c172b] border border-amber-200/60 text-xs font-semibold px-3 py-1 rounded-full">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#0c172b] animate-pulse"></span>
+          Pending
+        </span>
+      </div> 
+      <!-- Application Under Review Info Box -->
+      <div class="border border-gray-200 rounded-2xl p-4 flex flex-col items-center shadow-xs mb-4">
+        <div class="w-10 h-10 bg-[#0c172b] border border-indigo-100 rounded-full flex items-center justify-center text-white mb-2">
+          <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+          </svg>
+        </div>
+        <h3 class="text-[14px] md:text-[#18px] text-gray-800">Application Under Review</h3>
+        <p class="text-[11px] md:text-[#16px] text-gray-500 mt-1 leading-normal max-w-[290px] md:max-w-[480px]">
+            Your application for the ‘ Wander Africa Explorer’ group has been recieved and is currently being processed by our moderation team.
+        </p>
+        <!-- Verification Track Checklist -->
+      <div class="space-y-2.5 mb-4 w-full">
+        
+        <!-- Checklist Item 1 -->
+        <div class="bg-[#d2d7df] border border-gray-300 mt-6 rounded-xl p-3.5 flex gap-4">
+          <div class="w-4 h-4 rounded-md text-black mt-0.5">
+           <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1781219159/Vector_23_tglp2q.png" alt="">
+          </div>
+          <div>
+            <h4 class="text-[14px] text-black">Identity Verification</h4>
+            <p class="text-[11px] text-black mt-1.5 leading-normal">We are confirming your profile credentials against our safety standards.</p>
+          </div> 
+        </div>
+
+        <!-- Checklist Item 2 -->
+        <div class="bg-[#d2d7df] border border-gray-300 mt-6 rounded-xl p-3.5 flex gap-4">
+          <div class="w-4 h-4 rounded-md text-black mt-0.5">
+           <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1781219223/Group_4_pguo1l.png" alt="">
+          </div>
+          <div>
+            <h4 class="text-[14px] text-black">Manual Moderation</h4>
+            <p class="text-[11px] text-black mt-1.5 leading-normal">Group leaders review applications to ensure member goals align with the community.</p>
+          </div> 
+        </div>
+        <!-- Estimated Response Notice -->
+      <div class="flex items-center justify-center gap-1.5 mt-4 text-[11px] text-gray-400 mb-4 bg-gray-50/50 py-2 border-t border-line border-gray-200">
+       
+        <span>Estimated response: <strong class="text-gray-600 font-semibold">24-48 hours</strong></span>
+      </div>
+      
+      <!-- Banner Tip Container Box -->
+      <div class="flex gap-4 bg-[#d3e4d3] border border-emerald-100 rounded-xl p-3.5 mb-5 text-[11px] text-[#498843] leading-normal">
+        <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1781219171/Vector_25_vq8iun.png" alt="" class="w-4 h-4">
+        While you wait, you can update your travel preferences in your profile to improve your acceptance rate.
+      </div>
+      <!-- Bottom Primary Actions Block -->
+      <div class="space-y-2">
+        <button id="updateProfileBtn" class="flex gap-4 md:gap-18 items-center justify-center w-full bg-[#20355a] hover:bg-slate-800 text-white font-semibold text-xs py-3 px-4 rounded-xl transition shadow-xs active:scale-[0.99]">
+            <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1781220886/Group_6_zujtnd.png" alt="" class="w-4 h-4">
+          Update Travel Profile
+        </button>
+        <button id="withdrawRequestBtn" class="flex gap-4 md:gap-18 items-center justify-center w-full bg-white hover:bg-rose-50 text-rose-500 border border-rose-100 font-semibold text-xs py-3 px-4 rounded-xl transition active:scale-[0.99]">
+          <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1781219190/Vector_27_nxj4ol.png" alt="" class="w-4 h-4">
+            Withdraw Request
+        </button>
+      </div>
+    </div>
+<footer>
+    <!-- App Fixed Tab Navigation Bar -->
+    <div class="mt-6 flex items-center justify-center gap-2 md:gap-8 bg-white border-t border-gray-100 py-3">
+      
+        <button class="flex flex-col items-center justify-center text-gray-400 hover:text-black transition flex-1">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+            <span class="text-[9px] mt-0.5 font-medium">Home</span>
+          </button>
+      <button class="flex flex-col items-center justify-center text-gray-400 hover:text-black transition flex-1">
+        <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780653761/Vector_1_tmwpqb.png" alt="group2" class="w-4 ">
+        <span class="text-[9px] mt-0.5 font-medium">Discovery</span>
+      </button>
+      <button class="flex flex-col items-center justify-center text-gray-400 hover:text-black transition flex-1">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        <span class="text-[9px] mt-0.5 font-bold">My Groups</span>
+      </button>
+      <button class="flex flex-col items-center justify-center text-gray-400 hover:text-black transition flex-1">
+        <img src="https://res.cloudinary.com/duoibszqt/image/upload/v1780653740/Group_2_t4jd6r.png"
+        alt="profile" class="w-5 h-5">
+        <span class="text-[9px] mt-0.5 font-bold">Profile</span>
+      </button>
+</footer>
+</body>
+    
+      
+          
+</html>
